@@ -1,12 +1,13 @@
 import React from "react";
 import Contenedor from "./Contenedor";
 import { Image } from "react-bootstrap";
+import Contenedor2 from "./Contenedor2";
 
 const ThirdSection = () => {
   return (
-    <div className="h-[90vh] bg-white pt-14">
+    <div className=" bg-white pt-14 flex flex-col">
       <div
-        className="m-auto w-[80%] h-[90%] flex flex-col pb-10 shadow-sm rounded-sm"
+        className="m-auto w-[80%] h-[70vh] flex flex-col pb-10 shadow-sm rounded-sm"
         style={{
           backgroundImage: `url("https://i.pinimg.com/564x/e9/2a/ff/e92affa7349324a65fc6d1c31555b6a2.jpg")`,
           backgroundSize: "cover",
@@ -43,6 +44,22 @@ const ThirdSection = () => {
           />
         </div>
         <a className="bg-white text-black w-[20%] font-semibold rounded-sm text-sm p-2 pr-4 pl-4 m-auto " >Ir a Mundo Lineru</a>
+      </div>
+
+      <div className="bg-slate-100 w-[80%] m-auto h-[70vh] mt-10 p-4 flex flex-col items-end">
+        <div className="text-black text-3xl font-bold w-2/3 flex flex-col text-right mr-10 mt-8">
+          <h1>Quieres saber mas sobre tu credito? Aca </h1> 
+          <h1>estan los detalles</h1>
+        </div>
+        <div className="flex flex-row pr-5 pl-5 mt-4 h-[50%]">
+          <Contenedor2 icon="https://i.pinimg.com/564x/cf/6c/a4/cf6ca4ad697fad33d23dcd96186265b4.jpg" title="Como funciona?" text="Tendrás un cupo de crédito rotativo para utilizar durante 6 meses. Te aprobamos un monto, pides tus desembolsos, y a medida que pagas, liberas tu cupo." />
+          <Contenedor2 icon="https://i.pinimg.com/564x/41/e2/0c/41e20caf218ac540e9251479119fe9a8.jpg" title="Que requisitos?" text="¿Eres mayor de edad y vives en Colombia? Ya tienes la mitad de los requisitos para pedir tu cupo de crédito. Y los otros dos son igual de sencillos." />
+          <Contenedor2 icon="https://i.pinimg.com/564x/0e/47/f8/0e47f863552c82c0d9a8ea45f3ecfec4.jpg" title="Cuanto cuesta?" text="Queremos explicarte qué estás pagado, sin costos ocultos ni letra pequeña. Además acá te mostramos cómo pagar menos en cargos e intereses." />
+          <Contenedor2 icon="https://i.pinimg.com/564x/84/2b/34/842b34c3c259a83e6af74fa0ed868358.jpg" title="Como pagar?" text="Para estar al día con tu crédito puedes pagar en línea o en miles de puntos a la vuelta de la esquina. Acá están los convenios y las instrucciones." />
+        </div>
+        <div className="w-full bg-slate-150 h-full">
+s
+        </div>
       </div>
     </div>
   );
