@@ -3,6 +3,7 @@ import React from "react";
 import IntroComponent from './Intro/IntroComponent'
 import MiddleSection from "./MiddleSection/MiddleSection";
 import ThirdSection from "./ThirdSection/ThirdSection";
+import FourthSection from "./FourthSection/FourthSection";
 
 
 const LandingPage = () => {
@@ -11,6 +12,7 @@ const LandingPage = () => {
         <IntroComponent/>
         <MiddleSection/>
         <ThirdSection/>
+        <FourthSection/>
       {/*   <Header/>
         
         
