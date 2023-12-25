@@ -12,7 +12,6 @@ const apiController = {
         to: today,
         language: "en",
         sortBy: "relevancy",
-        page: 2,
       })
       .then((response) => {
         console.log(response);
