@@ -10,14 +10,14 @@ const ThirdSection = () => {
   return (
     <div className=" bg-white pt-14 flex flex-col">
       <div
-        className="m-auto w-[80%] flex flex-col pb-10 shadow-sm rounded-sm"
+        className="m-auto w-[80%] flex flex-col pb-2 shadow-md rounded-sm"
         style={{
           backgroundImage: `url("https://i.pinimg.com/564x/e9/2a/ff/e92affa7349324a65fc6d1c31555b6a2.jpg")`,
           backgroundSize: "cover",
         }}
       >
         <div className="w-[60%] m-auto pt-4 text-center">
-          <div className="flex flex-row bg-white justify-center w-[40%] shadow-sm p-1 m-auto mb-5">
+          <div className="flex flex-row bg-white justify-center w-[40%] shadow-sm p-1 m-auto mb-5 hover:scale-110 duration-500 hover:cursor-pointer">
             <Image
               src="https://i.pinimg.com/564x/df/2c/49/df2c49dee3881936b8348e6e16c492b9.jpg"
               className="w-10 mr-2 "
@@ -51,12 +51,15 @@ const ThirdSection = () => {
             title="Acumula puntos Lineru."
           />
         </div>
-        <a className="bg-white text-black w-[20%] font-semibold rounded-sm text-sm p-2 pr-4 pl-4 m-auto ">
+        <div className=" bg-black mx-auto my-4">
+        <Button className="bg-white text-black font-semibold rounded-sm text-sm py-2 px-4 mx-auto hover:cursor-pointer hover:-translate-y-1 hover:translate-x-1 duration-150">
           Ir a Mundo Lineru
-        </a>
+        </Button>
+        </div>
+
       </div>
 
-      <div className="bg-slate-100 w-[80%] m-auto  mt-10 p-4 flex flex-col items-end">
+      <div className="bg-slate-100 w-[80%] m-auto  mt-10 p-4 flex flex-col items-end ">
         <div className="text-black text-3xl font-bold w-2/3 flex flex-col text-right mr-10 mt-8">
           <h1>Quieres saber mas sobre tu credito? Aca </h1>
           <h1>estan los detalles</h1>
@@ -84,18 +87,18 @@ const ThirdSection = () => {
           />
         </div>
       </div>
-      <div className="w-[80%] bg-slate-200 text-black m-auto pt-2 pb-2  ">
+      <div className="w-[80%] bg-slate-200 text-black m-auto pt-2 pb-2 shadow-md ">
         <div className="m-auto w-[80%] text-xs justify-stretch">
           <h1 className="font-bold ">
             Ejemplo de credito <FontAwesomeIcon icon={faCircleExclamation} />
           </h1>
-          <p>
+          <p className="my-1">
             Pensemos en un préstamo de trescientos mil pesos (COP. $300.000) a
             90 días con una tasa de interés efectiva anual (EA) del 36%, el
             costo que deberás contemplar es de $83.158 COP. IVA incluido que
             sumados al valor solicitado dará un total a pagar de $383.158 COP.
           </p>
-          <p>
+          <p className="my-1">
             <strong>Recuerda: </strong>La tasa máxima de interés efectiva anual
             vigente en Colombia para Diciembre de 2023 es del 37.56% EA. Esta
             tasa de interés varía cada mes y se calcula de acuerdo a lo
@@ -104,7 +107,7 @@ const ThirdSection = () => {
         </div>
       </div>
 
-      <div className="w-[80%] m-auto mt-20">
+      <div className="w-[80%] m-auto mt-20 shadow-md">
         <h1 className="text-black font-bold text-4xl">
           Pide tu credito 100% en linea en cuatro pasos
         </h1>
@@ -140,7 +143,15 @@ día hábil."
           />
         </div>
         <div className="m-auto justify-center content-center flex mt-4">
-          <Button className="text-violet-700 mr-4 font-semibold pt-1 pb-1 pr-4 bg-violet-200 border-sm shadow-sm pl-4">Como funciona?</Button> <Button className="bg-violet-700 border-sm shadow-sm font-semibold text-lg pt-1 pb-1 pr-4 pl-4">Como funciona?</Button>
+          <Button className="text-violet-700 mr-4 font-semibold pt-1 pb-1 pr-4 bg-violet-200 border-sm pl-4 hover:bg-violet-700 hover:cursor-pointer hover:text-white duration-150 shadow-md">
+            Como funciona?
+          </Button>{" "}
+          <div className="bg-black">
+          <Button className="bg-violet-700 border-sm shadow-md font-semibold text-lg pt-1 pb-1 pr-4 pl-4 hover:bg-violet-800 hover:translate-x-1 hover:-translate-y-1">
+            Calcula tu credito
+          </Button>
+          </div>
+     
         </div>
       </div>
     </div>

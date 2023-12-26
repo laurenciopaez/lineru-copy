@@ -24,8 +24,8 @@ const FourthSection = () => {
         <div className=" bg-slate-100 w-[80%] m-auto">
           <h1 className="text-black w-1/2 font-bold text-3xl justify-center text-center m-auto mt-10 mb-8">Miles de colombianos ya conocen Lineru</h1>
           <div className="m-auto w-1/3 justify-center content-center flex">
-          <Button className="text-violet-700 mr-5 border-2 p-2 bg-slate-50">Prensa</Button>{" "}
-          <Button className="text-violet-700 border-2 p-2 bg-slate-50">Usuarios</Button>
+          <Button className="text-violet-700 mr-5 border-2 p-2 bg-slate-50 hover:bg-violet-700 hover:cursor-pointer hover:text-white duration-150 shadow-md ">Prensa</Button>{" "}
+          <Button className="text-violet-700 border-2 p-2 bg-slate-50 hover:bg-violet-700 hover:cursor-pointer hover:text-white duration-150 shadow-md ">Usuarios</Button>
           </div>
          
           <Slider {...settings} className="mt-4 ">

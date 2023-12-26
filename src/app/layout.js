@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
         minBreakpoint= "xs">
           <NextUIProvider>
             <ReduxProvider>
-              <div className="flex w-full">
+              <div className="flex w-full font-serif">
                 {path === "/" ? null : <div> </div>} {children}
               </div>
             </ReduxProvider>
