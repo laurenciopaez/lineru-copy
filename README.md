@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Lineru Copy Project
 
-## Getting Started
+## Version: 0.1.0
 
-First, run the development server:
+### Overview
+Lineru Copy is a web application project that leverages modern web technologies to create a dynamic and interactive user experience. This project focuses on providing a seamless and visually appealing platform for accessing and interacting with various data sources, emphasizing news content.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Technologies Used
+- **Frontend:**
+  - React (`v18`)
+  - Next.js (`v14.0.4`)
+  - Next UI (`v2.2.9`) by @nextui-org
+  - Emotion for styling (`v11.11.1`)
+  - Framer Motion for animations (`v10.16.16`)
+  - React Bootstrap (`v2.9.2`)
+  - React Icons (`v4.12.0`)
+  - React Slick (`v0.29.0`) for carousel functionality
+  - React Tooltip (`v5.25.0`) for interactive tooltips
+  - Redux (`v5.0.0`) and React-Redux (`v9.0.4`) for state management
+  - Redux Toolkit (`v2.0.1`) for efficient Redux setup
+  - Next Themes (`v0.2.1`) for theme management
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Backend:**
+  - Express (`v4.18.2`) as the server framework
+  - Axios (`v1.6.2`) for making HTTP requests
+  - News API (`v2.4.1`) for fetching news data
+  - Dotenv (`v16.3.1`) for environment variable management
+  - Cors (`v2.8.5`) for handling cross-origin resource sharing
+  - Body Parser (`v1.20.2`) for parsing HTTP request bodies
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Tooling:**
+  - Nodemon (`v3.0.2`) for automatic server restarts during development
+  - ESLint (`v8`) with Next.js configuration (`v14.0.4`) for code linting
+  - Autoprefixer (`v10.0.1`), PostCSS (`v8`), and Tailwind CSS (`v3.3.0`) for styling enhancements
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Scripts
+- `dev`: Run the development server using Next.js.
+- `build`: Build the production-ready application.
+- `start`: Start the production server.
+- `lint`: Run ESLint for code linting.
 
-## Learn More
+### Getting Started
+1. Clone this repository.
+2. Install dependencies using `npm install`.
+3. Set up environment variables in a `.env` file.
+4. Run `npm run dev` to start the development server.
 
-To learn more about Next.js, take a look at the following resources:
+Feel free to explore and enhance Lineru Copy for your specific needs. Contributions and feedback are welcome!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+*Note: Make sure to keep your dependencies up to date, and refer to the official documentation of each library/tool for detailed information and customization options.*
