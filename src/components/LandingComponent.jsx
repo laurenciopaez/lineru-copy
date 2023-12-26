@@ -22,7 +22,7 @@ const LandingPage = () => {
   }, [dispatch])
 
     return (
-       <div className="w-full h-full">
+       <div className="w-screen h-full">
         <HeaderComp/>
         <IntroComponent/>
         <MiddleSection/>

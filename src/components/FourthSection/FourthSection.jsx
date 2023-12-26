@@ -16,6 +16,20 @@ const FourthSection = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ]
   };
 
   return (
@@ -30,7 +44,7 @@ const FourthSection = () => {
          
           <Slider {...settings} className="mt-4 ">
             {news !== undefined && news.map((el, index) => (
-              <div key={index} className="outline-none focus:outline-none ">
+              <div key={index} className="outline-none focus:outline-none  ">
                 <ContenedorNews
                   key={index}
                   title={el.title}

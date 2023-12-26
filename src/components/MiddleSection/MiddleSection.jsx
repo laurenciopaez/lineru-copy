@@ -18,7 +18,7 @@ const MiddleSection = () => {
           />
         </div>
 
-        <div className="text-black w-[80%] m-auto content-center text-center text-2xl font-semibold h-2/3" style={{textShadow: "2px 2px 4px rgba(255, 255, 255, 0.5) "}}>
+        <div className="text-black w-[80%] m-auto content-center text-center lg:text-2xl xl:text-2xl text-base font-semibold h-2/3" style={{textShadow: "2px 2px 4px rgba(255, 255, 255, 0.5) "}}>
           <p> Con Lineru conoces el dinero facil, rapido y seguro.</p>
           <p>
             Si tenes una conexion a internet no necesitas nada mas. Aplicas en

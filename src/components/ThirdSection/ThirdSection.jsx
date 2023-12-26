@@ -26,24 +26,24 @@ const ThirdSection = () => {
         }}
       >
         <div className="w-[60%] m-auto pt-4 text-center">
-          <div className="flex flex-row bg-white justify-center w-[40%] shadow-sm p-1 m-auto mb-5 hover:scale-110 duration-500 hover:cursor-pointer">
+          <div className="flex flex-row bg-white justify-center text-center content-center w-[40%] shadow-sm p-1 m-auto mb-5 hover:scale-110 duration-500 hover:cursor-pointer">
             <Image
               src="https://i.pinimg.com/564x/df/2c/49/df2c49dee3881936b8348e6e16c492b9.jpg"
-              className="w-10 mr-2 "
+              className="lg:w-10 xl:w-10 hidden lg:flex mr-2  "
             />
-            <p className="text-black text-sm m-auto">Nuevo en Lineru</p>
+            <p className="text-black text-sm ">Nuevo en Lineru</p>
           </div>
-          <h1 className="text-4xl font-bold">Mundo Lineru</h1>
-          <h1 className="text-4xl font-bold mb-4">
+          <h1 className="lg:text-4xl xl:text-4xl md:text-xl text-lg font-bold">Mundo Lineru</h1>
+          <h1 className="lg:text-4xl xl:text-4xl md:text-xl text-lg  font-bold mb-4">
             Acelera tu vida financiera
           </h1>
-          <p>
+          <p className="text-base lg:text-lg xl:text-lg">
             En mundo Lineru te prestamos dinero rapido. Y te ayudamos a mejorar
             tu perfil de credito, para que puedas acceder a creditos mas grandes
             y cumplir tus metas
           </p>
         </div>
-        <div className="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-3 sm:grid-cols-1 gap-4  w-[90%] m-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 sm:grid-cols-1 gap-4  w-[90%] m-auto">
           <motion.div
           ref={ref}
          
@@ -91,11 +91,11 @@ const ThirdSection = () => {
       </div>
 
       <div className="bg-slate-100 w-[80%] m-auto  mt-10 p-4 flex flex-col items-end ">
-        <div className="text-black text-3xl font-bold w-2/3 flex flex-col text-right mr-10 mt-8">
+        <div className="text-black lg:text-4xl xl:text-4xl md:text-xl text-lg  font-bold w-2/3 flex flex-col text-right mr-10 mt-8">
           <h1>Quieres saber mas sobre tu credito? Aca </h1>
           <h1>estan los detalles</h1>
         </div>
-        <div className="grid grid-cols-4 md:grid-cols-2 lg:grid-cols-4 sm:grid-cols-1 gap-4 pr-5 pl-5 mt-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 sm:grid-cols-1 gap-4 pr-5 pl-5 mt-4">
           <Contenedor2
             iconName="faCartShopping"
             title="Como funciona?"
@@ -142,7 +142,7 @@ const ThirdSection = () => {
         <h1 className="text-black font-bold text-4xl">
           Pide tu credito 100% en linea en cuatro pasos
         </h1>
-        <div className="grid grid-cols-4 md:grid-cols-2 lg:grid-cols-4 sm:grid-cols-1 gap-4 pr-5 pl-5 mt-10">
+        <div className="grid grid-cols-1 xl:grid-cols-4 md:grid-cols-2 lg:grid-cols-4 sm:grid-cols-1 gap-4 pr-5 pl-5 mt-10">
           <motion.div
           ref={ref2}
             initial={{ y: "-20%", opacity: 0 }}
@@ -201,7 +201,7 @@ día hábil."
             />
           </motion.div>
         </div>
-        <div className="m-auto justify-center content-center flex mt-4">
+        <div className="m-auto justify-center content-center flex mt-6 mb-8">
           <Button className="text-violet-700 mr-4 font-semibold pt-1 pb-1 pr-4 bg-violet-200 border-sm pl-4 hover:bg-violet-700 hover:cursor-pointer hover:text-white duration-150 shadow-md">
             Como funciona?
           </Button>{" "}
