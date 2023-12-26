@@ -6,6 +6,7 @@ import ThirdSection from "./ThirdSection/ThirdSection";
 import FourthSection from "./FourthSection/FourthSection";
 import { useDispatch } from "react-redux";
 import { getNews } from "@/redux/actions";
+import HeaderComp from "./Header/HeaderComp";
 
 
 const LandingPage = () => {
@@ -18,21 +19,14 @@ const LandingPage = () => {
 
     fetchData();
   }, [dispatch])
-  
+
     return (
        <div className="w-full h-full">
+        <HeaderComp/>
         <IntroComponent/>
         <MiddleSection/>
         <ThirdSection/>
         <FourthSection/>
-      {/*   <Header/>
-        
-        
-        
-        <CreditAsk/>
-        <CommentSection/>
-        <AskSection/>
-        <FooterSection/> */}
        </div>
     )
 }
