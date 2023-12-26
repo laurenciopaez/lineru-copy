@@ -1,4 +1,5 @@
 import React from "react";
+import {motion} from "framer-motion";
 
 const IntroComponent = () => {
   return (
@@ -13,9 +14,14 @@ const IntroComponent = () => {
       }}
     >
       <div className="w-[80%] m-auto ">
+        <motion.div
+        initial={{ x: "10%", opacity: 0}}
+        animate={{x:0, opacity: 1}}
+        transition={{ duration: 0.3 , type: "easeIn", }}>
         <h1 className="text-white font-bold text-6xl w-[50%]" style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }} >
           Lineru es dinero sin enredos.
         </h1>
+        </motion.div>
         <h3 className="mt-2 text-white text-xl font-medium " style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}>
           Pide tu cupo de credito en 15 minutos y recibe el dinero en{" "}
           <strong> 1 dia habil. </strong>
