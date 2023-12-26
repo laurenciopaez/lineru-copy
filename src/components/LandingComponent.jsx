@@ -7,6 +7,7 @@ import FourthSection from "./FourthSection/FourthSection";
 import { useDispatch } from "react-redux";
 import { getNews } from "@/redux/actions";
 import HeaderComp from "./Header/HeaderComp";
+import FooterComp from "./Footer/FooterComp";
 
 
 const LandingPage = () => {
@@ -27,6 +28,7 @@ const LandingPage = () => {
         <MiddleSection/>
         <ThirdSection/>
         <FourthSection/>
+        <FooterComp/>
        </div>
     )
 }
