@@ -14,7 +14,7 @@ const apiController = {
         sortBy: "relevancy",
       })
       .then((response) => {
-        console.log(response);
+        
         
         res.json({message: 'Data ok', data: response})
       })

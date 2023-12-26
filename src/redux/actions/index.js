@@ -10,11 +10,9 @@ async() => {
         const {data} = await axios('api/data');
 
         let answer = []
-        console.log(data)
-        for(let i = 0; i < 20; i++) {
+        for(let i = 0; i < data.data.articles.length && i < 20; i++) {
             answer.push(data.data.articles[i])
         }
-
         return answer;
     } catch (error) {
         console.log(error)
